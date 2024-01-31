@@ -1,0 +1,921 @@
+:root {
+    --heading-color: #0d0c22;
+    --bg-color: rgb(254 248 250);
+    --font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+  }
+  h1 {
+    font-size: 5rem;
+    color: var(--heading-color);
+  }
+  a {
+    color: var(--heading-color);
+  }
+  li {
+    list-style-type: none;
+  }
+  ::-webkit-scrollbar {
+    width:0.7rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(242, 242, 242);
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  #4b4b4c;
+    border-radius: 5px;
+  }
+  /* ...............................hero start.................................. */
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  >h3{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+    font-family: var(--font-family);
+    background-color: #ffda79;
+    padding: 1rem;
+    border-radius: 50px;
+    width: 22rem;
+    text-align: center;
+    animation-name: hero;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+  }
+  >h1{
+    font-size: 5.3rem;
+    font-weight: 400;
+    line-height: 5rem;
+    font-family: sans-serif;
+    text-align: center;
+  
+  }
+  >p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  >button{
+    padding: 1rem;
+    background-color: #0d0c22;
+    width: 9rem;
+  }
+}
+@keyframes hero {
+  0% {
+    background-color: #ffda79;
+}
+25% {
+    background-color: #ffabe7;
+}
+50% {
+    background-color: #d2bcf3;
+}
+75% {
+    background-color: #edf3d8;
+}
+100% {
+    background-color: #ffda79;
+}
+}
+  /* ...............................hero end.................................. */
+  /* .................................hero slider start........................... */
+  .hero-slider {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    > .slider-container {
+      animation-name: slider;
+      animation-duration: 15s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      /* transition: all linear 0.5; */
+      display: inline-block;
+      width: 100%;
+      >.img1{
+        background: url(https://cdn.dribbble.com/uploads/47180/original/1def7b9fb30832c4af4353b325d9c3af.mp4?1685645402);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img2{
+        background-image: url(https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img3{
+        background-image: url(https://cdn.dribbble.com/uploads/47172/original/d85ae8c7db2421e9a01ecac942978d4b.png?1685645079&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img4{
+        background-image: url(https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img5{
+        background-image: url(https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img6{
+        background-image: url(https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img7{
+        background-image: url(https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img8{
+        background-image: url(https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img9{
+        background-image: url(https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?1685645250&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img10{
+        background-image: url(https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img11{
+        background-image: url(https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img12{
+        background-image: url(https://cdn.dribbble.com/uploads/47172/original/d85ae8c7db2421e9a01ecac942978d4b.png?1685645079&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      >.img13{
+        background-image: url(https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?1685645250&format=webp&resize=320x399&vertical=center);
+        >h5{
+          color: var(--bg-color);
+          padding-top: 13.8rem;
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >h6{
+          color: var(--bg-color);
+          padding-left: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        >button{
+          border: 1px solid var(--bg-color);
+          padding: 0.2rem;
+          width: 4rem;
+          border-radius: 44rem;
+          margin-top: 0.4rem;
+          background: none;
+          color: var(--bg-color);
+          margin: 0.3rem;
+        }
+      }
+      > .imgs {
+        width: 273px;
+        height: 340px;
+        display: inline-block;
+        margin: 0.5rem;
+        border-radius: 50px;
+       >h4{
+        padding-top: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+
+        }
+      }
+    }
+  }
+  @keyframes slider {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  /* .................................hero slider End........................... */
+  /* ................................. product start........................... */
+.product{
+  width: 100%;
+  height: 140rem;
+  >h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.3rem;
+    font-weight: 500;
+  }
+  >button{
+    color: #0d0c22;
+    background-color: var(--bg-color);
+    border: 1px solid #0d0c22;
+    padding: 1.2rem;
+    margin-left: 39rem;
+    border-radius: 70px;
+    font-weight: 600;
+  }
+  
+}
+.product-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ width: 100%;
+  >.img-A{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    >.img-a1{
+      background-image: url(https://cdn.dribbble.com/userupload/12587016/file/original-4fb360069cbc53b132e7e24e68c37a96.png?resize=450x338&vertical=center);
+      background-size: cover;
+     height: 15rem;
+     width: 20rem;
+    }
+    >.img-a2{
+       background-image: url(https://cdn.dribbble.com/userupload/11972310/file/original-276cf5e95d09c15b0bed474499e2f933.jpg?resize=400x300&vertical=center);
+       background-size: cover;
+        height: 15rem;
+        width: 20rem;
+    }
+    >.img-a3{
+      background-image:url(https://cdn.dribbble.com/userupload/12645779/file/original-abab66ecf014bd1ad90d52fd06ec4ffb.jpg?resize=400x300&vertical=center);
+      background-size: cover;
+      height: 15rem;
+      width: 20rem;
+    }
+    >.img-a4{
+      background-image: url(https://cdn.dribbble.com/userupload/12664085/file/original-0a9c7406360142c99d52d84f3bb99d0d.png?resize=400x300&vertical=center);
+      background-size: cover;
+      height: 15rem;
+      width: 20rem;
+    }
+}
+>.img-B{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-b1{
+    background-image: url(https://cdn.dribbble.com/userupload/12652794/file/original-894f3695b966ec09fb2e3b91013c9a54.png?resize=400x300&vertical=center);
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-b2{
+     background-image: url(https://cdn.dribbble.com/userupload/12662105/file/original-123b074356491c7901de62ef810f0f07.jpg?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-b3{
+    background-image:url(https://cdn.dribbble.com/userupload/12575734/file/original-c715e518f1a7f428e3f7edd1e447edb4.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-b4{
+    background-image: url(https://cdn.dribbble.com/userupload/12630797/file/original-b47525fb77363f2ded68bde203ffa02d.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-C{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-c1{
+    background-image: url(https://cdn.dribbble.com/userupload/12531691/file/original-cd06f020b88b2601874f8defb5f7fba1.png?resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-c2{
+     background-image: url(https://cdn.dribbble.com/userupload/12551148/file/original-9a99b17bff26e50b231274a7c84672b0.jpg?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-c3{
+    background-image:url(https://cdn.dribbble.com/userupload/12677093/file/original-c6ec89d33298490d4f847b88bc955e1b.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-c4{
+    background-image: url(https://cdn.dribbble.com/userupload/12197499/file/original-b29288332c7d14001e934ec9f4c8a20b.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-D{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-d1{
+    background-image: url(https://cdn.dribbble.com/userupload/12664717/file/original-eef9b74077cc3125fe6c16f87cc649cc.jpg?crop=215x100-2377x1722&resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-d2{
+     background-image: url(https://cdn.dribbble.com/userupload/12595034/file/original-4c33378bf89f8ed9b625d9115f373626.png?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-d3{
+    background-image:url(https://cdn.dribbble.com/userupload/12470993/file/original-a2eb1877ffe44616c2372062494882e2.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-d4{
+    background-image: url(https://cdn.dribbble.com/userupload/12662430/file/original-3516aee0ee2c745d000fd35512545d11.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-D{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-d1{
+    background-image: url(https://cdn.dribbble.com/userupload/12664717/file/original-eef9b74077cc3125fe6c16f87cc649cc.jpg?crop=215x100-2377x1722&resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-d2{
+     background-image: url(https://cdn.dribbble.com/userupload/12595034/file/original-4c33378bf89f8ed9b625d9115f373626.png?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-d3{
+    background-image:url(https://cdn.dribbble.com/userupload/12470993/file/original-a2eb1877ffe44616c2372062494882e2.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-d4{
+    background-image: url(https://cdn.dribbble.com/userupload/12662430/file/original-3516aee0ee2c745d000fd35512545d11.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-D{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-d1{
+    background-image: url(https://cdn.dribbble.com/userupload/12664717/file/original-eef9b74077cc3125fe6c16f87cc649cc.jpg?crop=215x100-2377x1722&resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-d2{
+     background-image: url(https://cdn.dribbble.com/userupload/12595034/file/original-4c33378bf89f8ed9b625d9115f373626.png?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-d3{
+    background-image:url(https://cdn.dribbble.com/userupload/12470993/file/original-a2eb1877ffe44616c2372062494882e2.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-d4{
+    background-image: url(https://cdn.dribbble.com/userupload/12662430/file/original-3516aee0ee2c745d000fd35512545d11.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-E{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-e1{
+    background-image: url(https://cdn.dribbble.com/userupload/12067422/file/original-51e29171c9abe410d2a84f9f41e4a345.jpg?crop=45x83-1962x1521&resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-e2{
+     background-image: url(https://cdn.dribbble.com/userupload/12544344/file/original-1f4035bc4b526573b3b943abd2f2b3cb.png?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-e3{
+    background-image:url(https://cdn.dribbble.com/userupload/12587016/file/original-4fb360069cbc53b132e7e24e68c37a96.png?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-e4{
+    background-image: url(https://cdn.dribbble.com/userupload/12555421/file/original-c24a7723bf3967fb739d99b300f961c0.png?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-F{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-f1{
+    background-image: url(https://cdn.dribbble.com/userupload/12645350/file/original-df964776e74a551d4678fed4048bd1da.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-f2{
+     background-image: url(https://cdn.dribbble.com/userupload/12567472/file/original-10960de57317fb2ab0f5d46c1201268f.png?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-f3{
+    background-image:url(https://cdn.dribbble.com/userupload/12623252/file/original-a244986587da0caf5bc6425f7a3ac8b0.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-f4{
+    background-image: url(https://cdn.dribbble.com/userupload/12670802/file/original-c003efeb7e77f25144d0b1b9d3faa37f.jpg?crop=250x208-1032x795&resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+>.img-G{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  >.img-g1{
+    background-image: url(https://cdn.dribbble.com/userupload/12684044/file/original-e782c45d2bd0e4632a88bafb1e206f0e.png?crop=0x0-1600x1200&resize=400x300&vertical=center);
+    background-size: cover;
+   height: 15rem;
+   width: 20rem;
+  }
+  >.img-g2{
+     background-image: url(https://cdn.dribbble.com/userupload/12569469/file/original-de0700a6c188b05cc72e849aa26a26d5.jpg?resize=400x300&vertical=center);
+     background-size: cover;
+      height: 15rem;
+      width: 20rem;
+  }
+  >.img-g3{
+    background-image:url(https://cdn.dribbble.com/userupload/12475995/file/original-1bc2b890201f0026e8ee4834cbed2fb3.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+  >.img-g4{
+    background-image: url(https://cdn.dribbble.com/userupload/12616383/file/original-2f7ba74300c9319ea35ce4552b57547c.jpg?resize=400x300&vertical=center);
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+  }
+}
+}
+/* .................................product End ........................... */
+ /* ...............................design start.................................. */
+
+.design{
+  background-color: #ffda79;
+  height: 45rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ >h1{
+display: flex;
+justify-self: center;
+align-items: center;
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 5rem;
+  padding-top: 9rem;
+  padding-left: 32rem;
+ }
+ >p{
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+  padding-left: 3rem;
+  text-align:center ;
+ }
+ .btn button{
+  margin-left: 2rem;
+  padding: 1rem;
+ }
+ >h3{
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+  padding-left: 39rem;
+ }
+}
+  /* ...............................design end.................................. */
+  .hero-slider {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    > .slider-container {
+      animation-name: slider;
+      animation-duration: 15s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      /* transition: all linear 0.5; */
+      display: inline-block;
+      width: 100%;
+         > .imgs {
+        width: 273px;
+        height: 340px;
+        display: inline-block;
+        margin: 0.5rem;
+        border-radius: 50px;
+       >h4{
+        padding-top: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+
+        }
+      }
+    }
+  }
+  @keyframes slider {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .footer{
+    height: 23rem;
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+  }
+  .menu ul li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--heading-color);
+    text-decoration: none;
+  }
+  .menu ul li a:hover{
+    color: #ffda79;
+  }
+  .menu ul li .tools{
+     display: flex;
+     gap: 1rem;
+     font-size: 1.3rem;
+  }
+  .menu-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 28rem;
+  }
+  .menu-a .right  {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 1rem;
+    >li a{
+      font-size: 0.9rem;
+    font-weight: 500;
+    color: #4b4b4c;
+    text-decoration: none;
+    }
+  }
+  .menu-a .left  {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 1rem;
+    >li a{
+      font-size: 0.9rem;
+    font-weight: 500;
+    color: #4b4b4c;
+    text-decoration: none;
+    }
+  }
+  
+
